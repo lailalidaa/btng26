@@ -1,0 +1,36 @@
+.kartu-sertifikat {
+    background-color: #e14141;
+    border: 1px solid #cccccc;
+    float: left; 
+    margin:10px;
+    position: relative;
+} 
+.kotak-gambar{
+    width:200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.kotak-gambar img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.clear {
+    clear: both;
+}
+.sertifikat-img:hover {
+    transform:translateY(-20px);
+}
+.kotak-gambar input:checked+label img {
+    position: fixed;
+    width: auto;
+    max-width: 90%;
+    max-height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
